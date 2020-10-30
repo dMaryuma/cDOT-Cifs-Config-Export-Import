@@ -42,6 +42,14 @@ a.	Paramters are:
 3.	Same parameters as backup.
 4.	The script imports the files from C:\*.xml and use them to create cifs shares, name mapping etc…
 
+## Example
+
+```
+ .\BackupConfig.ps1 -Cluster NetappPrimary -ClusterDR NetappSecondary -ClusterUser admin -Vserver svm -VserverDR svm_dr -ClusterPassword netapp123 -ClusterDRUser admin -ClusterDRPassword netapp123 
+```
+```
+ .\importConfig.ps1 -Cluster NetappPrimary -ClusterDR NetappSecondary -ClusterUser admin -Vserver svm -VserverDR svm_dr -ClusterPassword netapp123 -ClusterDRUser admin -ClusterDRPassword netapp123 
+```
 Good luck,
 NetApp PS, Daniel Maryuma
 
